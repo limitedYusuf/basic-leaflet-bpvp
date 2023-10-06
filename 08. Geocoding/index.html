@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Geocoding</title>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+      <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+   </head>
+
+   <body class="bg-gray-100">
+      <div id="app" class="max-w-lg mx-auto mt-8 p-4 bg-white rounded shadow-lg">
+         <h1 class="text-2xl font-semibold mb-4">Geocoding Alamat ke Koordinat</h1>
+         <div>
+            <input v-model="address" class="w-full border rounded py-2 px-3" placeholder="Masukkan alamat">
+            <button @click="geocodeAddress"
+               class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Geocode</button>
+         </div>
+         <div v-if="geocodedLocations.length > 0" class="mt-4">
+            <h2 class="text-xl font-semibold">Hasil Geocoding:</h2>
+            <div v-for="(location, index) in geocodedLocations" :key="index">
+               <input type="radio" :id="'location' + index" :value="location" v-model="selectedLocation">
+               <label :for="'location' + index">{{ location.display_name }}</label>
+            </div>
+            <button @click="showSelectedLocation"
+               class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Tampilkan</button>
+         </div>
+      </div>
+
+      <div id="map" class="mt-8 mx-auto w-3/4 h-64"></div>
+
+      <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+      <script src="app.js"></script>
+   </body>
+
+</html>

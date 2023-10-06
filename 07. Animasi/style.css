@@ -1,0 +1,19 @@
+@keyframes markerAnimation {
+   0% {
+      transform: translate(0, 0) scale(1) rotate(0);
+      opacity: 1;
+   }
+
+   100% {
+      transform: translate(0, 0) scale(1) rotate(360deg);
+      opacity: 0;
+   }
+}
+
+.animated-marker-icon .animated-marker {
+   width: 40px;
+   height: 40px;
+   background-color: red;
+   border-radius: 50%;
+   animation: markerAnimation 2s linear infinite;
+}

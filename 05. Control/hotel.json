@@ -1,0 +1,52 @@
+[
+   {
+      "name": "Hotel 1",
+      "address": "Alamat Hotel 1",
+      "latlng": [-0.5143, 117.1377]
+   },
+   {
+      "name": "Hotel 2",
+      "address": "Alamat Hotel 2",
+      "latlng": [-0.5051, 117.1534]
+   },
+   {
+      "name": "Hotel 3",
+      "address": "Alamat Hotel 3",
+      "latlng": [-0.5125, 117.1436]
+   },
+   {
+      "name": "Hotel 4",
+      "address": "Alamat Hotel 4",
+      "latlng": [-0.5033, 117.1590]
+   },
+   {
+      "name": "Hotel 5",
+      "address": "Alamat Hotel 5",
+      "latlng": [-0.5187, 117.1367]
+   },
+   {
+      "name": "Hotel 6",
+      "address": "Alamat Hotel 6",
+      "latlng": [-0.4979, 117.1599]
+   },
+   {
+      "name": "Hotel 7",
+      "address": "Alamat Hotel 7",
+      "latlng": [-0.5162, 117.1342]
+   },
+   {
+      "name": "Hotel 8",
+      "address": "Alamat Hotel 8",
+      "latlng": [-0.5056, 117.1627]
+   },
+   {
+      "name": "Hotel 9",
+      "address": "Alamat Hotel 9",
+      "latlng": [-0.5223, 117.1361]
+   },
+   {
+      "name": "Hotel 10",
+      "address": "Alamat Hotel 10",
+      "latlng": [-0.5047, 117.1463]
+   }
+]

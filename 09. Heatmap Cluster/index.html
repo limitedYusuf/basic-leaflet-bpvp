@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Heatmap dan Clustering</title>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+      <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.css" />
+      <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.Default.css" />
+      <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+   </head>
+
+   <body class="bg-gray-100">
+      <div id="app" class="flex flex-col items-center justify-center">
+         <div class="flex mb-4 mt-4">
+            <button :class="heatmapButtonClass" @click="toggleHeatmap">Toggle Heatmap</button>
+            <button :class="clusterButtonClass" @click="toggleClustering">Toggle Clustering</button>
+         </div>
+         <div id="map" class="w-full" style="height: 100vh;"></div>
+      </div>
+
+      <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.heat/0.2.0/leaflet-heat.js"></script>
+      <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster.js"></script>
+      <script src="app.js"></script>
+   </body>
+
+</html>

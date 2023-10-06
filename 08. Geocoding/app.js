@@ -13,10 +13,9 @@ new Vue({
    },
    methods: {
       initMap() {
-         // Inisialisasi peta
          this.map = L.map('map', {
             center: [-2.5489, 118.0149],
-            zoom: 5, // Tingkat zoom awal
+            zoom: 5,
          });
 
          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(this.map);
